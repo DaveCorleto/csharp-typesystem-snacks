@@ -234,16 +234,17 @@ namespace csharp_typesystem_snacks
             for (int i = 0; i < N; i++)
             {
                 Random rand = new Random();
-                int size = 10; // Genera un numero casuale compreso tra 1 e 10
+
+                //Dimensione dell'array: 
+                int size = 10; 
 
                 int[]array = new int[size];
 
                 for (int j = 0; j < size; j++)
                 {
-                    array[j] = rand.Next(1, 101); // Genera un numero casuale compreso tra 1 e 100
+                    array[j] = rand.Next(1, 100); // Genera un numero casuale compreso tra 1 e 100
                 }
 
-                // Stampa l'array generato
                 Console.WriteLine($"Array {i + 1}: [{string.Join(", ", array)}]");
             }
 
