@@ -13,40 +13,66 @@ namespace csharp_typesystem_snacks
 
             //csharp_typesystem_snacks 1
 
-            Console.WriteLine("Inserisci il primo numero");
+            //Console.WriteLine("Inserisci il primo numero");
 
-            int numero1 = Convert.ToInt32(Console.ReadLine());
+            //int numero1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Inserisci il secondo numero");
+            //Console.WriteLine("Inserisci il secondo numero");
 
-            int numero2 = Convert.ToInt32(Console.ReadLine());
+            //int numero2 = Convert.ToInt32(Console.ReadLine());
 
-            int numMajor = 0;
+            //int numMajor = 0;
 
-            if (numero1 > numero2)
-            {
-                numMajor = numero1;
-            }
-            if (numero2 > numero1)
-            {
-                numMajor = numero2;
-            }
-            else
-            {
-                Console.WriteLine("Reinserisci un altro numero...i numeri sono pari ");
-            }
+            //if (numero1 > numero2)
+            //{
+            //    numMajor = numero1;
+            //}
+            //if (numero2 > numero1)
+            //{
+            //    numMajor = numero2;
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Reinserisci un altro numero...i numeri sono pari ");
+            //}
 
-            Console.WriteLine($"Il numero maggiore che hai inserito è: {numMajor} ");
+            //Console.WriteLine($"Il numero maggiore che hai inserito è: {numMajor} ");
 
             //Snacks 2 
 
 
+            Console.WriteLine("Inserisci la prima parola");
+
+            string word1 = Console.ReadLine();
+
+            Console.WriteLine("Inserisci la seconda parola");
+
+            string word2 = Console.ReadLine();
+
+            string straightword = "";
+            string longword = "";
+
+            if (word1.Length > word2.Length)
+            {
+                straightword = word2;
+                longword = word1;
+            }
+            else if (word2.Length > word1.Length)
+            {
+                longword = word2;
+                straightword = word1;
+            }
+            else
+            {
+                Console.WriteLine("Le parole che hai inserito hanno la stessa lunghezza!");
+            }
+
+            Console.WriteLine($"Hai inserito le parole: {straightword} e {longword} ");
+
         }
     }
 
-    //    Snack 1
-    //L’utente inserisce due numeri in successione.
-    //Il software stampa il maggiore.
+
     //    Snack 2
     //L’utente inserisce due parole in successione.
     //    Il software stampa prima la parola più corta, poi la parola più lunga.
