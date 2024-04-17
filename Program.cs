@@ -222,19 +222,33 @@ namespace csharp_typesystem_snacks
             //Console.WriteLine($"STOP! La somma dei numeri che hai inserito è superiore a 50");
 
 
+            //Snack 10
+            //Fai inserire un numero, che chiameremo N, all’utente.
+            //Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
+            //Ogni volta che ne crei uno, stampalo a schermo.
+
+            Console.WriteLine("Inserisci un numero: ");
+
+            int N = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i < N; i++)
+            {
+                Random rand = new Random();
+                int size = 10; // Genera un numero casuale compreso tra 1 e 10
+
+                int[]array = new int[size];
+
+                for (int j = 0; j < size; j++)
+                {
+                    array[j] = rand.Next(1, 101); // Genera un numero casuale compreso tra 1 e 100
+                }
+
+                // Stampa l'array generato
+                Console.WriteLine($"Array {i + 1}: [{string.Join(", ", array)}]");
+            }
 
         }
 
 
-
-
-
-
-        //Snack 9
-        //Crea un array vuoto e chiedi all’utente un numero da inserire nell’array.Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la somma degli elementi è minore di 50.
-        //Snack 10
-        //Fai inserire un numero, che chiameremo N, all’utente.
-        //Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
-        //Ogni volta che ne crei uno, stampalo a schermo.
     }
     }
