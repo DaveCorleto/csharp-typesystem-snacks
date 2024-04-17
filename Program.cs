@@ -98,14 +98,22 @@ namespace csharp_typesystem_snacks
             //Snack 4
             //Calcola la somma e la media dei numeri da 2 a 10.
 
-            
+            int[] numbersss = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
+            int somma = 0;
+
+            foreach (int number in numbersss) {
+                somma += number;
+            }
+
+            decimal media = ((decimal)somma / numbersss.Length);
+
+
+            Console.WriteLine($"La somma dei numeri è: {somma}");
+            Console.WriteLine($"La media dei numeri è: {media}");
         }
 
 
-
-        //Snack 4
-        //Calcola la somma e la media dei numeri da 2 a 10.
         //Snack 5
         //Il software chiede all’utente di inserire un numero.Se il numero inserito è pari, stampa il numero, se è dispari, stampa il numero successivo.
         //Snack 6
@@ -121,4 +129,5 @@ namespace csharp_typesystem_snacks
         //Fai inserire un numero, che chiameremo N, all’utente.
         //Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
         //Ogni volta che ne crei uno, stampalo a schermo.
+    }
     }
