@@ -164,28 +164,43 @@ namespace csharp_typesystem_snacks
             //Utilizzo una lista per far si che l'array non debba avere una dimensione
             //Predefinita'
 
-            List<int> fantasynumber = new List<int>();
+            //List<int> fantasynumber = new List<int>();
 
-            for (int i = 0; i < 6; i++)
-            {
-                Console.WriteLine("Inserisci un numero: ");
-                int newNumber = Convert.ToInt32(Console.ReadLine());
-                
-                if (newNumber %2 != 0)
-                {
-                    fantasynumber.Add(newNumber);
-                }
+            //for (int i = 0; i < 6; i++)
+            //{
+            //    Console.WriteLine("Inserisci un numero: ");
+            //    int newNumber = Convert.ToInt32(Console.ReadLine());
 
-            }
+            //    if (newNumber %2 != 0)
+            //    {
+            //        fantasynumber.Add(newNumber);
+            //    }
 
-            Console.WriteLine($"I numeri che hai inserito sono: ");
+            //}
 
-            foreach (int number in fantasynumber)
-            {
-                Console.WriteLine($"{number}");
+            //Console.WriteLine($"I numeri che hai inserito sono: ");
 
-            }
+            //foreach (int number in fantasynumber)
+            //{
+            //    Console.WriteLine($"{number}");
 
+            //}
+
+            //    Snack 8
+            //Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.
+
+            //int [] numeriInteri = { 1,3,5,7,8,9};
+            //int somma = 0;
+
+            //for (int i = 0; i < numeriInteri.Length; i++)
+            //{
+            //    if ( i%2 != 0)
+            //    {
+            //        somma += numeriInteri[i];
+            //    }
+            //}
+
+            //Console.WriteLine($"La somma degli elementi in posizione dispari è: {somma}");
 
 
 
@@ -197,8 +212,7 @@ namespace csharp_typesystem_snacks
 
 
 
-        //    Snack 8
-        //Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.
+
         //Snack 9
         //Crea un array vuoto e chiedi all’utente un numero da inserire nell’array.Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la somma degli elementi è minore di 50.
         //Snack 10
