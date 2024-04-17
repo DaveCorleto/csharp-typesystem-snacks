@@ -2,6 +2,7 @@
 using System.Runtime.ConstrainedExecution;
 using System.Xml.Linq;
 using System;
+using System.Security.Cryptography;
 
 namespace csharp_typesystem_snacks
 {
@@ -202,7 +203,23 @@ namespace csharp_typesystem_snacks
 
             //Console.WriteLine($"La somma degli elementi in posizione dispari è: {somma}");
 
+            //Snack 9
+            //Crea un array vuoto e chiedi all’utente un numero da inserire nell’array.Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la somma degli elementi è minore di 50.
 
+            //List<int> userNumbers = new List<int>();
+
+            //int somma = 0;
+
+
+            //while (somma < 50)
+            //{
+            //    Console.WriteLine("Inserisci un numero: ");
+            //    int newNumber = Convert.ToInt32(Console.ReadLine());
+            //    userNumbers.Add(newNumber);
+            //    somma += newNumber;
+            //    Console.WriteLine($"La somma dei numeri che hai inserito è: {somma}");
+            //}
+            //Console.WriteLine($"STOP! La somma dei numeri che hai inserito è superiore a 50");
 
 
 
