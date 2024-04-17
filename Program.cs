@@ -115,19 +115,48 @@ namespace csharp_typesystem_snacks
             //Snack 5
             //Il software chiede all’utente di inserire un numero.Se il numero inserito è pari, stampa il numero, se è dispari, stampa il numero successivo.
 
-            Console.WriteLine("Inserisci un numero: ");
-            int number1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Inserisci un numero: ");
+            //int number1 = Convert.ToInt32(Console.ReadLine());
 
-            if (number1 % 2 != 1) {
-                Console.WriteLine($"Il numero che hai inserito è: {number1}");
-                    }
+            //if (number1 % 2 != 1) {
+            //    Console.WriteLine($"Il numero che hai inserito è: {number1}");
+            //        }
 
-            else  { 
-                Console.WriteLine("Inserisci un altro numero: ");
+            //else  { 
+            //    Console.WriteLine("Inserisci un altro numero: ");
 
-                int number2 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine($"Ecco il secondo numero: {number2}");
+            //    int number2 = Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine($"Ecco il secondo numero: {number2}");
+            //};
+
+            //Snack 6
+            //In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
+
+            string[] invited = {
+                "Nick Carraway",
+                "Daisy Buchanan",
+                "Tom Buchanan",
+                "Jordan Baker",
+                "Myrtle Wilson",
+                "George Wilson",
             };
+
+            Console.WriteLine("Inserisci il tuo nome, controlleremo se sei tra gli invitati...il Grande Gatsby non tollera estranei alla sua festa: ");
+
+            string name = Console.ReadLine();
+
+            foreach (string inv in invited) { 
+            }
+
+            if (invited.Contains(name))
+            {
+                Console.WriteLine("Benvenuto! Goditi la festa!");
+            }
+            else
+            {
+                Console.WriteLine("Mi dispiace, non sei autorizzato a partecipare alla festa.");
+            }
+
 
 
 
@@ -137,8 +166,7 @@ namespace csharp_typesystem_snacks
 
 
 
-        //Snack 6
-        //In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
+
         //    Snack 7
         //Crea un array vuoto.
         //Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
