@@ -98,24 +98,45 @@ namespace csharp_typesystem_snacks
             //Snack 4
             //Calcola la somma e la media dei numeri da 2 a 10.
 
-            int[] numbersss = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //int[] numbersss = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-            int somma = 0;
+            //int somma = 0;
 
-            foreach (int number in numbersss) {
-                somma += number;
-            }
+            //foreach (int number in numbersss) {
+            //    somma += number;
+            //}
 
-            decimal media = ((decimal)somma / numbersss.Length);
+            //decimal media = ((decimal)somma / numbersss.Length);
 
 
-            Console.WriteLine($"La somma dei numeri è: {somma}");
-            Console.WriteLine($"La media dei numeri è: {media}");
+            //Console.WriteLine($"La somma dei numeri è: {somma}");
+            //Console.WriteLine($"La media dei numeri è: {media}");
+
+            //Snack 5
+            //Il software chiede all’utente di inserire un numero.Se il numero inserito è pari, stampa il numero, se è dispari, stampa il numero successivo.
+
+            Console.WriteLine("Inserisci un numero: ");
+            int number1 = Convert.ToInt32(Console.ReadLine());
+
+            if (number1 % 2 != 1) {
+                Console.WriteLine($"Il numero che hai inserito è: {number1}");
+                    }
+
+            else  { 
+                Console.WriteLine("Inserisci un altro numero: ");
+
+                int number2 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"Ecco il secondo numero: {number2}");
+            };
+
+
+
+
+
         }
 
 
-        //Snack 5
-        //Il software chiede all’utente di inserire un numero.Se il numero inserito è pari, stampa il numero, se è dispari, stampa il numero successivo.
+
         //Snack 6
         //In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
         //    Snack 7
