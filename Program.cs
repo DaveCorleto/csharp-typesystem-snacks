@@ -132,29 +132,58 @@ namespace csharp_typesystem_snacks
             //Snack 6
             //In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
 
-            string[] invited = {
-                "Nick Carraway",
-                "Daisy Buchanan",
-                "Tom Buchanan",
-                "Jordan Baker",
-                "Myrtle Wilson",
-                "George Wilson",
-            };
+            //string[] invited = {
+            //    "Nick Carraway",
+            //    "Daisy Buchanan",
+            //    "Tom Buchanan",
+            //    "Jordan Baker",
+            //    "Myrtle Wilson",
+            //    "George Wilson",
+            //};
 
-            Console.WriteLine("Inserisci il tuo nome, controlleremo se sei tra gli invitati...il Grande Gatsby non tollera estranei alla sua festa: ");
+            //Console.WriteLine("Inserisci il tuo nome, controlleremo se sei tra gli invitati...il Grande Gatsby non tollera estranei alla sua festa: ");
 
-            string name = Console.ReadLine();
+            //string name = Console.ReadLine();
 
-            foreach (string inv in invited) { 
+            //foreach (string inv in invited) { 
+            //}
+
+            //if (invited.Contains(name))
+            //{
+            //    Console.WriteLine("Benvenuto! Goditi la festa!");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Mi dispiace, non sei autorizzato a partecipare alla festa.");
+            //}
+
+            //    Snack 7
+            //Crea un array vuoto.
+            //Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
+
+            //Utilizzo una lista per far si che l'array non debba avere una dimensione
+            //Predefinita'
+
+            List<int> fantasynumber = new List<int>();
+
+            for (int i = 0; i < 6; i++)
+            {
+                Console.WriteLine("Inserisci un numero: ");
+                int newNumber = Convert.ToInt32(Console.ReadLine());
+                
+                if (newNumber %2 != 0)
+                {
+                    fantasynumber.Add(newNumber);
+                }
+
             }
 
-            if (invited.Contains(name))
+            Console.WriteLine($"I numeri che hai inserito sono: ");
+
+            foreach (int number in fantasynumber)
             {
-                Console.WriteLine("Benvenuto! Goditi la festa!");
-            }
-            else
-            {
-                Console.WriteLine("Mi dispiace, non sei autorizzato a partecipare alla festa.");
+                Console.WriteLine($"{number}");
+
             }
 
 
@@ -167,9 +196,7 @@ namespace csharp_typesystem_snacks
 
 
 
-        //    Snack 7
-        //Crea un array vuoto.
-        //Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
+
         //    Snack 8
         //Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.
         //Snack 9
